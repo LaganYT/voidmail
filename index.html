@@ -116,7 +116,52 @@ for (i = 0; i < close.length; i++) {
 <h3>To get a voided address you have to signup and get approved for a void email address. To signup click <a href="/signup">here!</a></h3>
 	<br>
 	<h1>How to send emails with your void mail address</h1><br>
-	<h3>To learn how click <a href="https://improvmx.com/guides/send-emails-using-gmail/">here</a></h3>
+<h3>	<button id="button4">Learn More</button>
+	<script>
+var button = document.getElementById('button4'); // Assumes element with id='button'
+
+button.onclick = function() {
+    var div = document.getElementById('myDIV4');
+    if (div.style.display !== 'none') {
+        div.style.display = 'none';
+    }
+    else {
+        div.style.display = 'block';
+    }
+};
+</script>
+<style>
+  #button4 {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  }
+  #myDIV4 {
+      display: none;
+  }
+</style>
+ <h3> <center>
+	  <div id="myDIV4">
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	 <h1>Sending emails using Gmail SMTP</h1><p>It is possible to add any Voidmail alias as a sending email on Gmail. Free and reliable.<br>It only takes a minute to setup! Any questions? <a href="mailto:admin@voidmail.ga">Contact us</a>.</p>
+
+<ol><li><h2>Make sure you have 2FA enabled</h2><p>For this method to work, you need to have <a href="https://www.google.com/landing/2step/" target="_blank" rel="noopener noreferrer">two factor authentification</a> enabled for your Google account. If it’s not, follow the link below and set it up.</p><a href="https://www.google.com/landing/2step/" target="_blank" rel="noopener noreferrer">Enable 2FA for your Google account</a></li><li ><img src="https://d33wubrfki0l68.cloudfront.net/687b39bd4369519daa354eb4a94eabed5ce8d212/544c3/wp-content/uploads/2019/06/app-password-google.gif" ><h2>Create an App Password</h2><p>Google will verify your ownership with this app password. Select “Mail” under app, and “Mac” under device. Hit “Generate”. Copy and keep for later!</p><a href="https://security.google.com/settings/security/apppasswords" target="_blank"  rel="noopener noreferrer">Create an app password</a></li><li><h2>Add your email to Gmail</h2><p>Go to Gmail -> Settings -> Accounts and Import. Then, select “Add another email address you own” under Aliases.</p></li><li><img src="https://d33wubrfki0l68.cloudfront.net/ccd2bb7736e2e759ba9071d4a81fd49e69df6a1b/4e24a/wp-content/uploads/2019/06/smtp-sender-info-gmail.gif" ><h2>Fill in your sender’s information</h2><p>Set your forwarded email (your alias) and your sender’s name. Untick “treat as an alias”.</p></li><li ><img src="https://d33wubrfki0l68.cloudfront.net/db3bff216e67704cd74ad994ba740fb6b814bdd4/dab19/wp-content/uploads/2019/06/smtp-gmail.gif" ><h2>Fill in your email informations</h2><p>
+                    SMTP is <strong>smtp.gmail.com</strong>, port is right already.<br>
+                    Username is <strong>your gmail address</strong> (include @gmail.com)<br>
+                    Password is the password you generated on Step 2.<br>
+                    Leave TLS enabled as is
+                    </p></li><li><h2>Confirm ownership</h2><p>
+                    You will receive an email from GMail asking you to confirm ownership with a code. Fill in the code in the popup modal, and you are all set!
+                    </p></li><li><h2>Send emails from your alias</h2><p>
+                    Now you can just select your alias in the list when you compose a new message.
+	</p></li></ol>
+	  </div>
+	  </center></h3>
 </header></section>
 <style>
   body {
